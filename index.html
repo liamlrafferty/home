@@ -407,17 +407,17 @@ const MORAL=`<h4>Moral Foundations, Personality Traits, and Academic/Professiona
 <p><strong>General Conservatism (R² = 0.169, p &lt; 0.001)</strong></p>
 <ul>
 <li><em>Primary driver:</em> low Agreeableness (β = -0.268, p &lt; 0.001), together with higher Productivity/Conscientiousness (β = 0.174, p &lt; 0.001), Emotional Stability (β = 0.161, p = 0.001) and Extroversion (β = 0.162, p = 0.001).</li>
-<li><em>Insight:</em> Conservatism aligns with a structured, agentic and order-oriented personality profile that prioritizes duty and institutional boundaries over interpersonal agreeableness.</li>
+<li><em>Possible interpretation:</em> One theory is that General Conservatism tracks a structured, order-oriented personality profile that prioritizes duty and institutional boundaries over interpersonal agreeableness. This study measures association only and cannot test that explanation.</li>
 </ul>
 <p><strong>Care (R² = 0.119, p &lt; 0.001)</strong></p>
 <ul>
 <li><em>Primary driver:</em> high Agreeableness (β = 0.327, p &lt; 0.001), with a minor negative contribution from Extroversion (β = -0.112, p = 0.011).</li>
-<li><em>Insight:</em> Care is rooted in prosocial warmth and empathy, and is the inverse of General Conservatism on the Agreeableness axis.</li>
+<li><em>Possible interpretation:</em> Care may reflect prosocial warmth and empathy, and it sits opposite General Conservatism on the Agreeableness axis. Other explanations are not ruled out.</li>
 </ul>
 <p><strong>Liberty (R² = 0.044, p &lt; 0.001)</strong></p>
 <ul>
 <li><em>Primary driver:</em> higher Openness (β = 0.119, p = 0.011) and Productivity (β = 0.100, p = 0.035), alongside lower Agreeableness (β = -0.141, p = 0.011).</li>
-<li><em>Insight:</em> Liberty reflects an independent, self-directed mindset marked by personal agency and openness to experience, unconstrained by social compliance.</li>
+<li><em>Possible interpretation:</em> Liberty may reflect an independent, self-directed mindset marked by personal agency and openness to experience. The model explains only a small share of the variance, so this reading is tentative.</li>
 </ul>
 
 <h5>Profession and field of study</h5>
@@ -425,17 +425,26 @@ const MORAL=`<h4>Moral Foundations, Personality Traits, and Academic/Professiona
 <p><strong>General Conservatism (R² = 0.049, p &lt; 0.001)</strong></p>
 <ul>
 <li><em>Primary driver:</em> Skilled Trades is the strongest positive predictor (β = 0.387, p = 0.005), and STEM is a significant negative predictor (β = -0.295, p = 0.022). Commerce trends toward a marginal positive association (β = 0.260, p = 0.069).</li>
-<li><em>Insight:</em> The Skilled Trades result aligns with self-selection into vocations rooted in established physical protocol, tangible standards and traditional labor structures. The STEM result likely reflects academic environments that emphasize empirical skepticism and social liberalism over traditional authority structures.</li>
+<li><em>Possible interpretation:</em> The Skilled Trades result may reflect self-selection into vocations built around established physical protocol, tangible standards and traditional labor structures. The STEM result may reflect academic environments that emphasize empirical skepticism over traditional authority structures. Neither mechanism was measured in this study.</li>
 </ul>
 <p><strong>Liberty (R² = 0.022, p = 0.039)</strong></p>
 <ul>
-<li><em>Primary driver:</em> respondents in Skilled Trades (β = 0.405, p = 0.004), a strong orientation toward personal autonomy within trade disciplines.</li>
-<li><em>Insight:</em> Trade occupations often attract people who value self-reliance, practical independence and minimal regulatory oversight of their daily work, reinforcing a high prioritization of personal liberty.</li>
+<li><em>Primary driver:</em> respondents in Skilled Trades (β = 0.405, p = 0.004), who scored higher on Liberty than the reference category.</li>
+<li><em>Possible interpretation:</em> One theory is that trade occupations attract people who value self-reliance, practical independence and limited regulatory oversight of their daily work. This was not tested directly.</li>
 </ul>
 <p><strong>Care (R² = 0.016, p = 0.120)</strong></p>
 <ul>
 <li><em>Primary driver:</em> the overall field model does not reach statistical significance, though respondents in Arts, Humanities &amp; Social Sciences show a slight positive association with Care (β = 0.176, p = 0.036).</li>
-<li><em>Insight:</em> Academic paths centered on human experience, social systems and cultural expression naturally attract or foster people whose moral frameworks prioritize empathy and harm reduction.</li>
+<li><em>Possible interpretation:</em> Academic paths centered on human experience, social systems and cultural expression may attract, or foster, people whose moral frameworks prioritize empathy and harm reduction. Given that the overall field model is not significant, this is speculative.</li>
+</ul>
+
+<h5>Limitations</h5>
+<ul>
+<li><strong>Sample.</strong> Respondents were a convenience sample recruited through post-secondary organizations over one week, with a raffle incentive. They are not representative of North American students or the wider population, and self-selection is likely. Sample demographics and the field-of-study reference category are not reported here.</li>
+<li><strong>Self-report.</strong> Both personality and moral foundation scores are self-reported and may reflect social desirability or inconsistent self-perception.</li>
+<li><strong>Association, not cause.</strong> The results are correlational. They cannot show that personality or field of study produces a moral orientation, and the interpretations above are theories, not findings.</li>
+<li><strong>Model design.</strong> Personality and field were modelled separately, with no controls for gender, age, religion or political affiliation. The R² comparison is therefore descriptive and is not a formal test of which predictor set is better.</li>
+<li><strong>Multiple tests.</strong> Many coefficients were tested without correction, so results near p = 0.05 should be treated cautiously, and Fairness and In-Group Loyalty were excluded from the analysis.</li>
 </ul>
 
 <h5>Core takeaway</h5>
@@ -504,13 +513,13 @@ const works = [
   title:"OSINT Report: MERCER",
   blurb:"A mock open-source intelligence report on a fictional social media profile, separating direct observations from analytical inferences.",
   facts:{Format:"Mock OSINT report",Period:"March 2025 to August 2026",Context:"School workshop on writing open-source intelligence reports. Every student had the same mock social media pages and 1 hour, with no internet access. All details are fictional.",Result:"Commended for attention to detail and lack of bias, and the report led to an interview opportunity with one of the workshop organizers"},
-  intro:"The report reviews a fictional social media profile to estimate his residential area, flag adverse information, assess links to a criminal network called PERSEUS, and look for indicators of human trafficking. Each lead lists what the posts show and what the analyst cannot conclude.",
+  intro:"The report reviews a fictional social media profile to estimate his residential area, flag adverse information, assess links to a criminal network called PERSEUS, and look for indicators of human trafficking. Each lead is split into what was observed, what can reasonably be inferred, and what cannot be concluded from the posts alone.",
   points:[
-   "Admiralty codes rate the source only, while separate existence and interpretation confidence ratings apply to each finding.",
-   "An explicit attribution section warns against circular reasoning, where evidence that fits a tip is counted as corroborating the tip.",
-   "Three competing hypotheses each list the evidence that would raise or lower them.",
-   "Concealment behavior is assessed against a base rate rather than assumed to be incriminating.",
-   "Threats against a possible victim are treated as a separate, urgent matter, with handling and privacy rules for sharing."
+   "Every lead is divided into “Observed,” “Inference” and “Cannot be inferred,” so unverified leads are not presented as confirmed facts.",
+   "Judgements carry stated confidence levels (for example, moderate for the residential move, low to moderate for the PERSEUS association, low for child-related activity), and each lead is given a priority rating.",
+   "A dated chronology table pairs each observation with its analytical significance, and no timestamps are invented where the dataset has none.",
+   "Political content and interpersonal conflict are assessed separately as other adverse information, not treated as evidence of trafficking.",
+   "Firearm photographs are handled as an officer-safety consideration rather than a criminal indicator, and recommendations route corroboration through authorized investigative means."
   ]
  },
  {
